@@ -59,7 +59,7 @@ function quadratic(a, b, c) {
 
 /* ==== Button Handlers ==== */
 function onMyFuncClick() {
-  myFunc();
+  myFunc(); 
 }
 
 function onRandomClick() {
