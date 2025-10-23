@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>JS | Variables and Methods</title>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>Unit 8.6 – Functions</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    label { display: block; margin-top: 10px; }
+    input { margin-bottom: 10px; padding: 4px; width: 100px; }
+    button { margin: 5px 0; padding: 6px 10px; }
+    .output { margin: 5px 0 15px; font-weight: bold; }
+    hr { margin: 20px 0; }
+  </style>
 </head>
 <body>
-    <h1>Your html goes here...</h1>
-    <br>See the <a href="README.md">README</a> for project details
+  <h1>Unit 8.6 – Functions</h1>
+  <p>Each button calls a function and shows the result below using <code>textContent</code>.</p>
+
+  <h3>myFunc()</h3>
+  <button id="btnMyFunc" onclick="onMyFuncClick()">Click Me</button>
+  <div id="outMyFunc" class="output"></div>
+
+  <hr>
+
+  <h3>getRandomNum(max)</h3>
+  <label for="maxRand">Enter a max value:</label>
+  <input id="maxRand" type="number">
+  <button id="btnRandom" onclick="onRandomClick()">Generate Random</button>
+  <div id="outRandom" class="output"></div>
+
+  <hr>
+
+  <h3>myAdder(x, y)</h3>
+  <label>x: <input id="addX" type="number"></label>
+  <label>y: <input id="addY" type="number"></label>
+  <button id="btnAdder" onclick="onAdderClick()">Add</button>
+  <div id="outAdder" class="output"></div>
+
+  <hr>
+
+  <h3>distance(x1, y1, x2, y2)</h3>
+  <label>x1: <input id="x1" type="number"></label>
+  <label>y1: <input id="y1" type="number"></label>
+  <label>x2: <input id="x2" type="number"></label>
+  <label>y2: <input id="y2" type="number"></label>
+  <button id="btnDistance" onclick="onDistanceClick()">Find Distance</button>
+  <div id="outDistance" class="output"></div>
+
+  <hr>
+
+  <h3>quadratic(a, b, c)</h3>
+  <label>a: <input id="qa" type="number"></label>
+  <label>b: <input id="qb" type="number"></label>
+  <label>c: <input id="qc" type="number"></label>
+  <button id="btnQuadratic" onclick="onQuadraticClick()">Solve</button>
+  <div id="outQuadratic" class="output"></div>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
